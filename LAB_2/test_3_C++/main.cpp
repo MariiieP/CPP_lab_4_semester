@@ -15,11 +15,9 @@
 #include <vector>
 #include <algorithm>
 #include "help_file_name.h"
-#include "help_menu.cpp"
+#include "help_menu.h"
 #include "bank_account.h"
 using namespace std;
-
-//template class Task<bank_account>;
 
 int menu()
 {
@@ -33,14 +31,74 @@ int menu()
     cout << "[6] - Линейный поиск" << endl;
     cout << "[7] - Двоичный поиск" << endl;
     cout << "[0] - Выход" << endl;
-    int n = input_number(0, 9, "Ваш выбор: ");
+    int n = input_number(0, 8, "Ваш выбор: ");
     cout << "\n";
     return n;
 }
 
+void menu_item_lineary_search(Task<bank_account> task)
+{
+    int numb;
+    vector<bank_account> subset;
+    bank_account elem;
+    bool ( *compare )( bank_account, bank_account ) = NULL;
+    numb = input_number(1, 3, "Выберите тип поиска:\n 1 - по владельцу\n 2 - по номеру счета\n 3 - по дате\nВаш выбор: ");
+    elem = elem.input_change_type_search(numb);
+    switch (numb)
+    {
+        case 1:
+            compare = elem.search_element_surname;
+            break;
+        case 2:
+            compare = elem.search_element_number_account;
+            break;
+        case 3:
+            compare = elem.search_element_surname_date_account_opening;
+            break;
+    }
+    subset = task.lineary_search(elem,compare);
+    if (subset.size() != 0)
+        task.output_screen(subset, elem.output_screen_bank_account);
+    else
+        cout << "Элементы не найдены" << endl;
+}
+
+void menu_item_binary_search(Task<bank_account> task)
+{
+    int numb;
+    vector<bank_account> subset;
+    bank_account elem;
+    bool ( *compare )( bank_account, bank_account ) = NULL;
+    bool ( *sort )( bank_account, bank_account) = NULL;
+    numb = input_number(1, 3, "Выберите тип поиска:\n 1 - по владельцу\n 2 - по номеру счета\n 3 - по дате\nВаш выбор:  ");
+    elem = elem.input_change_type_search(numb);
+    switch (numb)
+    {
+        case 1:
+            compare = elem.search_element_surname;
+            sort = elem.sorte_surname;
+            break;
+        case 2:
+            compare = elem.search_element_number_account;
+            sort = elem.sorte_number_account;
+            break;
+        case 3:
+            compare = elem.search_element_surname_date_account_opening;
+            sort = elem.sorte_date_account_opening;
+            break;
+    }
+    subset = task.Tbinary_search(elem, sort, compare);
+    if (subset.size() != 0)
+        task.output_screen(subset, elem.output_screen_bank_account);
+    else
+        cout << "Элементы не найдены" << endl;
+}
+
+
 int change_input_info()
 {
     Task<bank_account> task;
+     bank_account elem;
     cout << " ||||||||||||||||||| ---Меню--- |||||||||||||||||||  " << endl;
     cout << "[1] - Заполнение контейнера с консоли" << endl;
     cout << "[2] - Заполнение контейнера из файла " << endl;
@@ -50,11 +108,11 @@ int change_input_info()
     switch (changemenu)
     {
         case 1:
-            task.read_from_screen(input_screen_bank_account);
+            task.read_from_screen(elem.input_screen_bank_account);
             break;
 
         case 2:
-            task.read_from_file(read_from_string);
+            task.read_from_file(elem.read_from_string);
             break;
 
         default:
@@ -63,12 +121,8 @@ int change_input_info()
     }
     for(;;)
     {
-        bank_account elem;
-        bank_account search_elem;
         vector<bank_account> subset;
         int numb;
-        bool ( *compare )( bank_account, bank_account ) = 0;
-        bool ( *sort )( bank_account, bank_account) = 0;
         int n = menu();
         switch (n)
         {
@@ -77,70 +131,31 @@ int change_input_info()
                 break;
 
             case 2:
-                task.output_screen(task.vect, output_screen_bank_account);
+                task.output_screen(task.vect, elem.output_screen_bank_account);
                 task.remove(input_number(0, task.size(), "Введите номер удаляемого эл-та ( [0] - если передумали удалять): "));
                 break;
 
             case 3:
-                task.output_screen(task.vect, output_screen_bank_account);
+                task.output_screen(task.vect, elem.output_screen_bank_account);
                 numb = input_number(0, task.size(), "Введите номер изменяеиого эл-та ( [0] - если передумали изменять): ");
                 if (numb != 0)
                     task.vect[n-1] = elem.сhange_bank_account(task.vect[numb -1]);
                 break;
 
             case 4:
-                task.output_screen(task.vect,output_screen_bank_account);
+                task.output_screen(task.vect,elem.output_screen_bank_account);
                 break;
 
             case 5:
-                task.output_file(task.vect,bank_account_to_string);
+                task.output_file(task.vect,elem.bank_account_to_string);
                 break;
 
             case 6:
-                numb = input_number(1, 3, "Выберите тип поиска:\n 1 - по владельцу\n 2 - по номеру счета\n 3 - по дате\nВаш выбор: ");
-                search_elem = input_change_type_search(numb);
-                switch (numb)
-                {
-                    case 1:
-                        compare = search_element_surname;
-                        break;
-                    case 2:
-                        compare = search_element_number_account;
-                        break;
-                    case 3:
-                        compare = search_element_surname_date_account_opening;
-                        break;
-                }
-                subset = task.lineary_search(search_elem,compare);
-                if (subset.size() != 0)
-                    task.output_screen(subset, output_screen_bank_account);
-                    else
-                        cout << "Элементы не найдены" << endl;
+                menu_item_lineary_search(task);
                 break;
 
             case 7:
-                numb = input_number(1, 3, "Выберите тип поиска:\n 1 - по владельцу\n 2 - по номеру счета\n 3 - по дате\nВаш выбор:  ");
-                search_elem = input_change_type_search(numb);
-                switch (numb)
-                {
-                    case 1:
-                        compare = search_element_surname;
-                        sort = sorte_surname;
-                        break;
-                    case 2:
-                        compare = search_element_number_account;
-                        sort = sorte_number_account;
-                        break;
-                    case 3:
-                        compare = search_element_surname_date_account_opening;
-                        sort = sorte_date_account_opening;
-                        break;
-                }
-                subset = task.binary_search(search_elem, sort, compare);
-                if (subset.size() != 0)
-                    task.output_screen(subset, output_screen_bank_account);
-                else
-                    cout << "Элементы не найдены" << endl;
+                menu_item_binary_search(task);
                 break;
 
 

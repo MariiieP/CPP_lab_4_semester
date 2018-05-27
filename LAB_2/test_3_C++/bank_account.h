@@ -25,6 +25,7 @@
 #include <algorithm>
 #include <sstream>
 #include "help_file_name.h"
+#include "help_menu.h"
 using namespace std;
 //подтип данные
 class my_info {
@@ -131,6 +132,7 @@ public:
 };
 
 class bank_account {
+    
 public:
 
     int number_account; // номер счета
@@ -170,22 +172,9 @@ public:
         return result;
     }
 
-    // перегруженный оператор равенства для структуры "счет в банке"
-    bank_account& operator = (bank_account c)
-    {
-        number_account = c.number_account;
-        code_account = c.code_account;
-        surname = c.surname;
-        sum_on_the_account = c.sum_on_the_account;
-        date_account_opening = c.date_account_opening;
-        year_percent = c.year_percent;
-
-        return (*this);
-    }
-};
 
 // функция ввода структуры "счет в банке" с консоли
-bank_account input_screen_bank_account()
+static bank_account input_screen_bank_account()
 {
     bank_account c;
     c.number_account = input_number(0,999999,"Введите номер счета: ");
@@ -198,7 +187,7 @@ bank_account input_screen_bank_account()
 }
 
 // функция вывода структуры "счет в банке" на консоль
-void output_screen_bank_account(bank_account c)
+static void output_screen_bank_account(bank_account c)
 {
     cout << "Номер счета: " << c.number_account << endl;
     cout << "Код счета: " << c.code_account << endl;
@@ -210,7 +199,7 @@ void output_screen_bank_account(bank_account c)
 
  
 //извлечение структуры "дата" из строки. Формат: день месяц год
-my_info from_string(string str)
+static my_info from_string(string str)
 {
     my_info result;
     try
@@ -232,13 +221,13 @@ my_info from_string(string str)
 }
 
 //перевод структуры "счет в банке" в строку
-string bank_account_to_string(bank_account c,int i)
+static string bank_account_to_string(bank_account c,int i)
 {
-    return  "Запись № "+to_string(i)+"\n"+ "Номер счета: "+to_string(c.number_account)+"\n"+"Код счета: "+to_string(c.code_account)+"\n"+"Фамилия владельца: "+c.surname+"\n"+"Сумма на счете: "+to_string(c.sum_on_the_account)+"\n"+"Дата: " + c.date_account_opening.date_to_string() + "\n"+ "Годовой процент начисления: " + to_string(c.year_percent)+"\n";
+    return  "\nНомер счета: "+to_string(c.number_account)+"\n"+"Код счета: "+to_string(c.code_account)+"\n"+"Фамилия владельца: "+c.surname+"\n"+"Сумма на счете: "+to_string(c.sum_on_the_account)+"\n"+"Дата: " + c.date_account_opening.date_to_string() + "\n"+ "Годовой процент начисления: " + to_string(c.year_percent)+"\n";
 }
 
 //считывание структуры "счет в банке" из строки
-bank_account read_from_string(ifstream& input)
+static bank_account read_from_string(ifstream& input)
 {
     bank_account result;
     string s;
@@ -258,7 +247,7 @@ bank_account read_from_string(ifstream& input)
         {
             getline(input, s, '\n');
             string wrd = "Код счета: ";
-            result.code_account = atoi( s.substr(wrd.length(), s.length() ).c_str() );
+            result.code_account = atoi( s.substr(wrd.length(), s.length() ).c_str() );//atoi: string-> int
         }
         if (!input.eof())
         {
@@ -293,19 +282,19 @@ bank_account read_from_string(ifstream& input)
 }
 
 //поиск равного элемента по владельцу
-bool search_element_surname(bank_account m, bank_account n)
+static bool search_element_surname(bank_account m, bank_account n)
 {
     return (m.surname == n.surname);
 }
 
 //поиск равного элемента по номеру счета
-bool search_element_number_account(bank_account m, bank_account n)
+static bool search_element_number_account(bank_account m, bank_account n)
 {
     return (m.number_account == n.number_account);
 }
 
 //поиск равного элемента по по дате
-bool search_element_surname_date_account_opening(bank_account m, bank_account n)
+static bool search_element_surname_date_account_opening(bank_account m, bank_account n)
 {
     return (m.date_account_opening == n.date_account_opening);
 }
@@ -314,7 +303,7 @@ bool search_element_surname_date_account_opening(bank_account m, bank_account n)
         1 - по владельцу
         2 - по номеру счета
         3 - по дате */
-bank_account input_change_type_search(int type_search)
+static bank_account input_change_type_search(int type_search)
 {
     bank_account result;
     switch (type_search)
@@ -334,20 +323,23 @@ bank_account input_change_type_search(int type_search)
 }
 
 //сравнения структур по владельцу
-bool sorte_surname(bank_account n, bank_account m)
+static bool sorte_surname(bank_account n, bank_account m)
 {
     return n.surname > m.surname;
 
 }
 
 //сравнения структур по номеру счета
-bool sorte_number_account(bank_account n, bank_account m)
+static bool sorte_number_account(bank_account n, bank_account m)
 {
     return  n.number_account > m.number_account;
 }
 
 //сравнения структур по дате
-bool sorte_date_account_opening(bank_account n, bank_account m)
+static bool sorte_date_account_opening(bank_account n, bank_account m)
 {
     return n.date_account_opening > m.date_account_opening;
 }
+
+
+};

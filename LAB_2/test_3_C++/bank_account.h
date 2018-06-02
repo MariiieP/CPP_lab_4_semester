@@ -28,8 +28,8 @@
 #include "help_menu.h"
 using namespace std;
 //подтип данные
-class my_info {
-
+class Data {
+        friend class bank_account;
 private:
 
     // проверка является ли год високосным
@@ -62,17 +62,15 @@ private:
         return true;
     }
 
-
-public:
     // день
     int day;
     // месяц
     int month;
     // год
     int year;
-
+public:
     // конструктор по умолчанию
-    my_info()
+    Data()
     {
          day=1;
          month=1;
@@ -102,13 +100,13 @@ public:
     }
 
     // перегруженный оператор равенства
-    bool operator == (const my_info &c)
+    bool operator == (const Data &c)
     {
         return ((day == c.day) && (month == c.month) && (year == c.year));
     }
 
     // конструктор копирования
-    my_info& operator = (my_info c)
+    Data& operator = (Data c)
     {
         day = c.day;
         month = c.month;
@@ -118,13 +116,13 @@ public:
     }
 
     // перегруженный оператор больше
-    bool operator > (const my_info &c)
+    bool operator > (const Data &c)
     {
         return ((year > c.year) || ((year == c.year) && (month > c.month)) || ((year == c.year) && (month == c.month) && (day>c.day)));
     }
 
     // перегруженные оператор меньше
-    bool operator < (const my_info &c)
+    bool operator < (const Data &c)
     {
         return ((year < c.year) || ((year == c.year) && (month < c.month)) || ((year == c.year) && (month == c.month) && (day<c.day)));
     }
@@ -132,16 +130,15 @@ public:
 };
 
 class bank_account {
-    
-public:
-
+//public:
+private:
     int number_account; // номер счета
     int code_account; // код счета
     string surname;// фамилия владельца
     double sum_on_the_account;// сумма на счете
-    my_info date_account_opening;// дата открытия счета
+    Data date_account_opening;// дата открытия счета
     int year_percent;// годовой процент начисления
-
+public:
     // конструктор по умолчанию
     bank_account()
     {
@@ -149,7 +146,7 @@ public:
         code_account=0;
         surname="";
         sum_on_the_account=0.0;
-        my_info date_account_opening;
+        Data date_account_opening;
         year_percent=0;
     }
 
@@ -199,9 +196,9 @@ static void output_screen_bank_account(bank_account c)
 
  
 //извлечение структуры "дата" из строки. Формат: день месяц год
-static my_info from_string(string str)
+static Data from_string  /*hack()*/ (string str)
 {
-    my_info result;
+    Data result;
     try
     {
         istringstream is(str);

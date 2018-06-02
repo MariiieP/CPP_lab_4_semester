@@ -17,6 +17,7 @@
 #include "help_file_name.h"
 #include "help_menu.h"
 #include "bank_account.h"
+
 using namespace std;
 
 int menu()
@@ -126,15 +127,16 @@ int change_input_info()
         int n = menu();
         switch (n)
         {
-            case 1:
-                //task.add(input_screen_bank_account());
+            case 1: {
+                auto ba = bank_account::input_screen_bank_account();
+                task.add(ba);
                 break;
-
-            case 2:
+            }
+            case 2: {
                 task.output_screen(task.vect, elem.output_screen_bank_account);
                 task.remove(input_number(0, task.size(), "Введите номер удаляемого эл-та ( [0] - если передумали удалять): "));
                 break;
-
+            }
             case 3:
                 task.output_screen(task.vect, elem.output_screen_bank_account);
                 numb = input_number(0, task.size(), "Введите номер изменяеиого эл-та ( [0] - если передумали изменять): ");

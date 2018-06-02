@@ -135,9 +135,7 @@ void add(Type &elem)
         {
             if (Equal(search_elem, *iter) )
                 new_vect.push_back(*iter);
-
         }
-
         return new_vect;
     }
 
@@ -148,14 +146,11 @@ void add(Type &elem)
         vector<Type> new_vect;
         sort( vect.begin(), vect.end(), compare );
         auto  index =lower_bound(vect.begin(), vect.end(), find_element, compare);
-            while( ( index !=vect.end() ) && Equal( *index, find_element) )
-            {
-               // if( Equal( *index, find_element) )
-               // {
-                    new_vect.push_back(*index);
-              //  }
-                 index++;
-            }
+        while( ( index !=vect.end() ) && Equal( *index, find_element) )
+        {
+          new_vect.push_back(*index);
+          index++;
+         }
         return new_vect;
     }
 

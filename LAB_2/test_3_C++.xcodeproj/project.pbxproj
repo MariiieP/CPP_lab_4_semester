@@ -67,9 +67,9 @@
 				6DDFCDA7208F1A0C00D376EF /* main.cpp */,
 				6DDFCDAE208F1A5D00D376EF /* bank_account.h */,
 				6DDFCDB0208F1B1A00D376EF /* help_menu_-.h */,
+				6DCD87A920AE1B140012E48B /* help_menu.h */,
 				6D181C5B20909CB200DC5B35 /* help_file_name.h */,
 				6D63C18320B7E189007C12EF /* help_file_name_-.h */,
-				6DCD87A920AE1B140012E48B /* help_menu.h */,
 			);
 			path = "test_3_C++";
 			sourceTree = "<group>";

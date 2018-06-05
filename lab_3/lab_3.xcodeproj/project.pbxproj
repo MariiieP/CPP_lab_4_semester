@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D63C18520B7E189007C12EF /* help_file_name_-.h in Sources */ = {isa = PBXBuildFile; fileRef = 6D63C18320B7E189007C12EF /* help_file_name_-.h */; };
-		6DCD87AA20AE1B140012E48B /* help_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DCD87A920AE1B140012E48B /* help_menu.cpp */; };
-		6DDFCDA8208F1A0C00D376EF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DDFCDA7208F1A0C00D376EF /* main.cpp */; };
+		6D2E66A720C5955C00AAE32B /* type_deposit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E66A520C5955C00AAE32B /* type_deposit.cpp */; };
+		6D2E66AA20C5D22D00AAE32B /* Data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E66A820C5D22D00AAE32B /* Data.cpp */; };
+		6D2E66AC20C5D51F00AAE32B /* help_file_name.h in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E66AB20C5D51F00AAE32B /* help_file_name.h */; };
+		6DBB602A20C5046500A67AA4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB602920C5046500A67AA4 /* main.cpp */; };
+		6DBB603220C504C200A67AA4 /* bank_account.h in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB603020C504C200A67AA4 /* bank_account.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6DDFCDA2208F1A0C00D376EF /* CopyFiles */ = {
+		6DBB602420C5046500A67AA4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,17 +27,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6D181C5B20909CB200DC5B35 /* help_file_name.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = help_file_name.h; sourceTree = "<group>"; };
-		6D63C18320B7E189007C12EF /* help_file_name_-.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "help_file_name_-.h"; sourceTree = "<group>"; };
-		6DCD87A920AE1B140012E48B /* help_menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = help_menu.cpp; sourceTree = "<group>"; };
-		6DDFCDA4208F1A0C00D376EF /* test_3_C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "test_3_C++"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DDFCDA7208F1A0C00D376EF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		6DDFCDAE208F1A5D00D376EF /* bank_account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bank_account.h; sourceTree = "<group>"; };
-		6DDFCDB0208F1B1A00D376EF /* help_menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = help_menu.h; sourceTree = "<group>"; };
+		6D2E66A520C5955C00AAE32B /* type_deposit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = type_deposit.cpp; sourceTree = "<group>"; };
+		6D2E66A620C5955C00AAE32B /* type_deposit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = type_deposit.h; sourceTree = "<group>"; };
+		6D2E66A820C5D22D00AAE32B /* Data.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Data.cpp; sourceTree = "<group>"; };
+		6D2E66A920C5D22D00AAE32B /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		6D2E66AB20C5D51F00AAE32B /* help_file_name.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = help_file_name.h; sourceTree = "<group>"; };
+		6DBB602620C5046500A67AA4 /* lab_3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab_3; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBB602920C5046500A67AA4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6DBB603020C504C200A67AA4 /* bank_account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bank_account.h; sourceTree = "<group>"; };
+		6DBB603320C5051E00A67AA4 /* help_file_name.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = help_file_name.cpp; sourceTree = "<group>"; };
+		6DBB603420C5054C00A67AA4 /* help_menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = help_menu.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6DDFCDA1208F1A0C00D376EF /* Frameworks */ = {
+		6DBB602320C5046500A67AA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,101 +50,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6DDFCD9B208F1A0C00D376EF = {
+		6DBB601D20C5046500A67AA4 = {
 			isa = PBXGroup;
 			children = (
-				6DDFCDA6208F1A0C00D376EF /* test_3_C++ */,
-				6DDFCDA5208F1A0C00D376EF /* Products */,
+				6DBB602820C5046500A67AA4 /* lab_3 */,
+				6DBB602720C5046500A67AA4 /* Products */,
+				6D2E66A620C5955C00AAE32B /* type_deposit.h */,
+				6D2E66A920C5D22D00AAE32B /* Data.h */,
+				6D2E66AB20C5D51F00AAE32B /* help_file_name.h */,
 			);
 			sourceTree = "<group>";
 		};
-		6DDFCDA5208F1A0C00D376EF /* Products */ = {
+		6DBB602720C5046500A67AA4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DDFCDA4208F1A0C00D376EF /* test_3_C++ */,
+				6DBB602620C5046500A67AA4 /* lab_3 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6DDFCDA6208F1A0C00D376EF /* test_3_C++ */ = {
+		6DBB602820C5046500A67AA4 /* lab_3 */ = {
 			isa = PBXGroup;
 			children = (
-				6DDFCDA7208F1A0C00D376EF /* main.cpp */,
-				6DDFCDAE208F1A5D00D376EF /* bank_account.h */,
-				6DDFCDB0208F1B1A00D376EF /* help_menu.h */,
-				6DCD87A920AE1B140012E48B /* help_menu.cpp */,
-				6D181C5B20909CB200DC5B35 /* help_file_name.h */,
-				6D63C18320B7E189007C12EF /* help_file_name_-.h */,
+				6DBB602920C5046500A67AA4 /* main.cpp */,
+				6DBB603020C504C200A67AA4 /* bank_account.h */,
+				6DBB603420C5054C00A67AA4 /* help_menu.h */,
+				6D2E66A520C5955C00AAE32B /* type_deposit.cpp */,
+				6D2E66A820C5D22D00AAE32B /* Data.cpp */,
+				6DBB603320C5051E00A67AA4 /* help_file_name.cpp */,
 			);
-			path = "test_3_C++";
+			path = lab_3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6DDFCDA3208F1A0C00D376EF /* test_3_C++ */ = {
+		6DBB602520C5046500A67AA4 /* lab_3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DDFCDAB208F1A0C00D376EF /* Build configuration list for PBXNativeTarget "test_3_C++" */;
+			buildConfigurationList = 6DBB602D20C5046500A67AA4 /* Build configuration list for PBXNativeTarget "lab_3" */;
 			buildPhases = (
-				6DDFCDA0208F1A0C00D376EF /* Sources */,
-				6DDFCDA1208F1A0C00D376EF /* Frameworks */,
-				6DDFCDA2208F1A0C00D376EF /* CopyFiles */,
+				6DBB602220C5046500A67AA4 /* Sources */,
+				6DBB602320C5046500A67AA4 /* Frameworks */,
+				6DBB602420C5046500A67AA4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "test_3_C++";
-			productName = "test_3_C++";
-			productReference = 6DDFCDA4208F1A0C00D376EF /* test_3_C++ */;
+			name = lab_3;
+			productName = lab_3;
+			productReference = 6DBB602620C5046500A67AA4 /* lab_3 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6DDFCD9C208F1A0C00D376EF /* Project object */ = {
+		6DBB601E20C5046500A67AA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Мария Юрьевна";
 				TargetAttributes = {
-					6DDFCDA3208F1A0C00D376EF = {
-						CreatedOnToolsVersion = 9.3;
+					6DBB602520C5046500A67AA4 = {
+						CreatedOnToolsVersion = 9.4;
 					};
 				};
 			};
-			buildConfigurationList = 6DDFCD9F208F1A0C00D376EF /* Build configuration list for PBXProject "test_3_C++" */;
+			buildConfigurationList = 6DBB602120C5046500A67AA4 /* Build configuration list for PBXProject "lab_3" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 6DDFCD9B208F1A0C00D376EF;
-			productRefGroup = 6DDFCDA5208F1A0C00D376EF /* Products */;
+			mainGroup = 6DBB601D20C5046500A67AA4;
+			productRefGroup = 6DBB602720C5046500A67AA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6DDFCDA3208F1A0C00D376EF /* test_3_C++ */,
+				6DBB602520C5046500A67AA4 /* lab_3 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6DDFCDA0208F1A0C00D376EF /* Sources */ = {
+		6DBB602220C5046500A67AA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DDFCDA8208F1A0C00D376EF /* main.cpp in Sources */,
-				6DCD87AA20AE1B140012E48B /* help_menu.cpp in Sources */,
-				6D63C18520B7E189007C12EF /* help_file_name_-.h in Sources */,
+				6D2E66AC20C5D51F00AAE32B /* help_file_name.h in Sources */,
+				6DBB602A20C5046500A67AA4 /* main.cpp in Sources */,
+				6DBB603220C504C200A67AA4 /* bank_account.h in Sources */,
+				6D2E66A720C5955C00AAE32B /* type_deposit.cpp in Sources */,
+				6D2E66AA20C5D22D00AAE32B /* Data.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		6DDFCDA9208F1A0C00D376EF /* Debug */ = {
+		6DBB602B20C5046500A67AA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -197,7 +207,7 @@
 			};
 			name = Debug;
 		};
-		6DDFCDAA208F1A0C00D376EF /* Release */ = {
+		6DBB602C20C5046500A67AA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,7 +258,7 @@
 			};
 			name = Release;
 		};
-		6DDFCDAC208F1A0C00D376EF /* Debug */ = {
+		6DBB602E20C5046500A67AA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -256,7 +266,7 @@
 			};
 			name = Debug;
 		};
-		6DDFCDAD208F1A0C00D376EF /* Release */ = {
+		6DBB602F20C5046500A67AA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -267,25 +277,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6DDFCD9F208F1A0C00D376EF /* Build configuration list for PBXProject "test_3_C++" */ = {
+		6DBB602120C5046500A67AA4 /* Build configuration list for PBXProject "lab_3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DDFCDA9208F1A0C00D376EF /* Debug */,
-				6DDFCDAA208F1A0C00D376EF /* Release */,
+				6DBB602B20C5046500A67AA4 /* Debug */,
+				6DBB602C20C5046500A67AA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DDFCDAB208F1A0C00D376EF /* Build configuration list for PBXNativeTarget "test_3_C++" */ = {
+		6DBB602D20C5046500A67AA4 /* Build configuration list for PBXNativeTarget "lab_3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DDFCDAC208F1A0C00D376EF /* Debug */,
-				6DDFCDAD208F1A0C00D376EF /* Release */,
+				6DBB602E20C5046500A67AA4 /* Debug */,
+				6DBB602F20C5046500A67AA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6DDFCD9C208F1A0C00D376EF /* Project object */;
+	rootObject = 6DBB601E20C5046500A67AA4 /* Project object */;
 }

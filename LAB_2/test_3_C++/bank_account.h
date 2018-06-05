@@ -25,12 +25,19 @@
 #include <algorithm>
 #include <sstream>
 #include "help_file_name.h"
-#include "help_menu.h"
+#include "help_menu.cpp"
 using namespace std;
 //подтип данные
 class Data {
         friend class bank_account;
 private:
+
+    // день
+    int day;
+    // месяц
+    int month;
+    // год
+    int year;
 
     // проверка является ли год високосным
     bool is_leap(int year) 
@@ -62,12 +69,6 @@ private:
         return true;
     }
 
-    // день
-    int day;
-    // месяц
-    int month;
-    // год
-    int year;
 public:
     // конструктор по умолчанию
     Data()
@@ -77,6 +78,7 @@ public:
          year = 1990;
     }
 
+   
     // ввод даты с консоли
     void input_date()
     {
@@ -86,6 +88,7 @@ public:
         {
             if (!answer)
                 cout << message << endl;
+
             day = input_number(1, 31, "Ввод даты:\nВведите день (1-31): ");
             month = input_number(1, 12, "Введите номер месяца (1-12): ");
             year = input_number(1970, 2018, "Введите год (1970-2018): ");

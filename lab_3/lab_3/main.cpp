@@ -1,11 +1,11 @@
 //
 //  main.cpp
-//  test_3_C++
+//  lab_3
 //
-//  Created by Мария Юрьевна on 24.04.2018.
+//  Created by Мария Юрьевна on 04.06.2018.
 //  Copyright © 2018 Мария Юрьевна. All rights reserved.
 //
-//Задача 2,№1.
+//Задача 3,№1.
 //Счет в банке представляет собой структуру с полями: номер счета, код счета, фамилия владельца, сумма на счете, дата открытия счета, годовой процент начисления. Поиск по номеру счета, дате открытия и владельцу.
 
 #include <stdio.h>
@@ -15,11 +15,11 @@
 #include <vector>
 #include <algorithm>
 #include "help_file_name.h"
-//#include "help_menu.h"
+#include "help_menu.h"
 #include "bank_account.h"
+#include  "Data.h"
 
 using namespace std;
-
 
 int menu()
 {
@@ -96,30 +96,91 @@ void menu_item_binary_search(Task<bank_account> task)
         cout << "Элементы не найдены" << endl;
 }
 
+int menu_user()
+{
+    cout << "\n";
+    cout << " ||||||||||||||||||| ---Меню--- |||||||||||||||||||  " << endl;
+    cout << "[1] - Открыть счет" << endl;
+    cout << "[2] - Закрыть счет" << endl;
+    cout << "[3] - Снять часть средств со счета"<< endl;
+    cout << "[4] - Посмотреть остаток средств на счетах" << endl;
+    cout << "[0] - Выход" << endl;
+    int n = input_number(0, 5, "Ваш выбор: ");
+    cout << "\n";
+    return n;
+}
 
 int change_input_info()
 {
     Task<bank_account> task;
-     bank_account elem;
+    bank_account elem;
     cout << " ||||||||||||||||||| ---Меню--- |||||||||||||||||||  " << endl;
-    cout << "[1] - Заполнение контейнера с консоли" << endl;
-    cout << "[2] - Заполнение контейнера из файла " << endl;
-    cout << "[0] - Выход" << endl;
+    cout << "[1] - Режим пользователя" << endl;
+    cout << "[2] - Режим сотрудника" << endl;
+    cout << "[10] - Выход" << endl;
 
     int changemenu = input_number(0, 2, "Ваш выбор: ");
+    for(;;)
+    {
+    int numb;
     switch (changemenu)
     {
         case 1:
-            task.read_from_screen(elem.input_screen_bank_account);
-            break;
+        {
+            int number_user = menu_user();
+            switch (number_user)
+            {
+                case 1:
+                    task.read_from_screen(elem.input_screen_bank_account);
+                    break;
+                case 2:
+                    task.output_screen(task.vect, elem.output_screen_bank_account);
+                    task.remove(input_number(0, task.size(), "Введите номер удаляемого эл-та ( [0] - если передумали удалять): "));
+                    break;
+                case 3:
+                    task.output_screen(task.vect, elem.output_screen_bank_account);
+                    numb = input_number(0, task.size(), "Введите номер изменяеиого эл-та ( [0] - если передумали изменять): ");
+                    if (numb != 0)
+                        task.vect[number_user-1] = elem.сhange_sum_on_the_account(task.vect[numb -1]);
+                    break;
+
+                case 4:
+                    task.output_screen(task.vect, elem.output_screen_year_present);
+                    break;
+                case 5:
+                    break;
+                default:
+                    cout << "Выход " << endl; exit(0);
+                    break;
+            }
+        }
+
 
         case 2:
-            task.read_from_file(elem.read_from_string);
-            break;
+        {
+            int nr_user = menu_user();
+            switch (nr_user)
+            {
+                case 1:
+                    cout << "Выход eddfef" << endl;
+                    break;
+                case 2:
+                case 3:
+                case 4:
+                default:
+                    cout << "Выход " << endl; exit(0);
+                    break;
+            }
+        }
+           // task.read_from_file(elem.read_from_string);
+            //break;
 
-        default:
-            cout << "Выход\n";
-            return 0;
+//        default:
+//            cout << "Выход\n";
+//            return 0;
+            break;
+    }
+
     }
     for(;;)
     {
@@ -171,10 +232,10 @@ int change_input_info()
 
 int main()
 {
-//    system("mode con cols=80 lines=25");
-//    HANDLE nwnd = GetStdHandle(STD_OUTPUT_HANDLE);
-//    COORD bufferSize ={80,50};
-//    SetConsoleScreenBufferSize(wHnd,bufferSize);
+    //    system("mode con cols=80 lines=25");
+    //    HANDLE nwnd = GetStdHandle(STD_OUTPUT_HANDLE);
+    //    COORD bufferSize ={80,50};
+    //    SetConsoleScreenBufferSize(wHnd,bufferSize);
     setlocale(LC_ALL, "Russian");
     change_input_info();
 }

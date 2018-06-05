@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test_3_C++/main.cpp"
-            timestampString = "549611426.454384"
+            timestampString = "549616508.170356"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180">
+            startingLineNumber = "181"
+            endingLineNumber = "181">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -104,7 +104,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test_3_C++/help_file_name.h"
-            timestampString = "549115791.161283"
+            timestampString = "549616508.170442"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -120,13 +120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test_3_C++/help_menu.h"
-            timestampString = "549611426.4548171"
+            timestampString = "549616508.170716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "lineary_search(Type search_elem,bool(*Equal)(Type,Type))"
-            landmarkType = "7">
+            startingLineNumber = "135"
+            endingLineNumber = "135">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -136,13 +134,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test_3_C++/help_menu.h"
-            timestampString = "549611426.454862"
+            timestampString = "549616508.170758"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "Tbinary_search( Type find_element, bool(*compare)(Type, Type), bool(*Equal)(Type, Type))"
-            landmarkType = "7">
+            startingLineNumber = "148"
+            endingLineNumber = "148">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -152,11 +148,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test_3_C++/main.cpp"
-            timestampString = "549611426.454901"
+            timestampString = "549616508.170796"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "change_input_info()"
             landmarkType = "9">
          </BreakpointContent>
@@ -168,11 +164,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test_3_C++/bank_account.h"
-            timestampString = "549611426.455097"
+            timestampString = "549616508.170837"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
             landmarkName = "read_from_string(ifstream&amp; input)"
             landmarkType = "7">
          </BreakpointContent>
@@ -184,11 +180,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test_3_C++/main.cpp"
-            timestampString = "549611426.455137"
+            timestampString = "549616508.1708781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "menu_item_lineary_search(Task&lt;bank_account&gt; task)"
             landmarkType = "9">
          </BreakpointContent>
@@ -200,11 +196,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test_3_C++/main.cpp"
-            timestampString = "549611426.455325"
+            timestampString = "549616508.1709141"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "menu_item_binary_search(Task&lt;bank_account&gt; task)"
             landmarkType = "9">
          </BreakpointContent>
@@ -216,11 +212,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test_3_C++/bank_account.h"
-            timestampString = "549611426.455507"
+            timestampString = "549616508.170949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "226"
-            endingLineNumber = "226"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "bank_account"
             landmarkType = "3">
          </BreakpointContent>
@@ -232,11 +228,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test_3_C++/bank_account.h"
-            timestampString = "549611426.455547"
+            timestampString = "549616508.170988"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "read_from_string(ifstream&amp; input)"
             landmarkType = "7">
          </BreakpointContent>

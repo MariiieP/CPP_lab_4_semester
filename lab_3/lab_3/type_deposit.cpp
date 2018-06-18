@@ -37,6 +37,17 @@ bool type_deposit::get_take_sum()
     return take_sum;
 }
 
+//свойство срока вклада
+string type_deposit::get_time_deposit()
+{
+    return time_deposit;
+}
+
+int type_deposit::get_sum_account()
+{
+    return sum_account;
+}
+
 //ввод вида вклада с консоли
  type_deposit input_screen_type_deposit()
 {
@@ -117,21 +128,21 @@ void output_cap_type_deposit()
 //ввод критерия поиска в зависимости от выбранного типа
 type_deposit input_search_type_deposit(int type_search)
 {
-type_deposit result;
-switch (type_search)
-{
-    case 1:
-        result.type_of_deposit = input_information("Введите твид вклада: ");
-        return result;
-    case 2:
-        result.percent = input_information(0,"Введите процент: ");
-        return result;
-    case 3:
-        result.take_sum = input_information(true, "Введите возможность снятия: ");
-        return result;
-    default:
-        return result;
-}
+    type_deposit result;
+    switch (type_search)
+    {
+        case 1:
+            result.type_of_deposit = input_information("Введите твид вклада: ");
+            return result;
+        case 2:
+            result.percent = input_information(0,"Введите процент: ");
+            return result;
+        case 3:
+            result.take_sum = input_information(true, "Введите возможность снятия: ");
+            return result;
+        default:
+            return result;
+    }
 
 }
 

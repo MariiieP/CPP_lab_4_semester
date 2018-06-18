@@ -27,8 +27,13 @@ class type_deposit
     string type_of_deposit;
     //процентная ставка
     int percent;
+
+    int sum_account;
+    
     //возможность частичного снятия суммы
     bool take_sum;
+
+    string time_deposit;
 
 public:
     //конструктор
@@ -36,7 +41,12 @@ public:
 
     //свойство вида вклада
     string get_type_of_deposit();
-    
+
+    //свойство срока вклада
+    string get_time_deposit();
+
+    int get_sum_account();
+
     //свойство процентной ставки
     int get_percent();
 

@@ -60,9 +60,9 @@ public:
     }
 
     // вывод в фай. void(*f) (Type) - указатель на функцию, которая записывает одну структуру в файл
-    void output_file(vector<Type> items,string (*f)(Type,int))
+    void output_file(vector<Type> items,string (*f)(Type,int),string newfname)
     {
-        string newfname = input_file_name();
+        //string newfname = input_file_name();
         ofstream fout(newfname, ios::out);
         if (fout)
         {
@@ -82,9 +82,10 @@ public:
     }
 
     // вывод на экран. void(*f) (Type) - указатель на функцию, которая считывает одну структуру на экран
-    void output_screen(vector<Type> items, void (*f) (Type))
+    void output_screen(vector<Type> items, void (*f) (Type) )
     {
         int count = 1;
+        //cap();
         for (auto pos = items.begin(); pos != items.end(); ++pos)
         {
             cout << "\nЗапись № " << count << endl;
@@ -95,9 +96,9 @@ public:
     }
 
     // ввод из файла. Type(*f)(ifstream&) - указатель на функцию, которая считывает одну структуру из файла
-    bool read_from_file(Type(*f)(ifstream&))
+    bool read_from_file(Type(*f)(ifstream&), string newfname)
     {
-        string newfname = input_file_name();
+        //string newfname = input_file_name();
         std::ifstream input;
 
         input.open(newfname);
@@ -162,8 +163,8 @@ public:
     bool search_equals(Type elem)
     {
         bool result = false;
-        vector<Type>::const_iterator pos;
-        for (pos = vect.begin(); pos != vect.end(); ++pos)
+        //vector<Type>::const_iterator pos;
+        for (auto pos = vect.begin(); pos != vect.end(); ++pos)
         {
             if (*pos == elem)
             {

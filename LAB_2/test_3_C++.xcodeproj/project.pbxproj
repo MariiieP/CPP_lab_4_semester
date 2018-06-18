@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D63C18520B7E189007C12EF /* help_file_name_-.h in Sources */ = {isa = PBXBuildFile; fileRef = 6D63C18320B7E189007C12EF /* help_file_name_-.h */; };
+		6D8CEAE220D7F28900F1F3E8 /* Data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D8CEAE020D7F28900F1F3E8 /* Data.cpp */; };
+		6D8CEAE420D7F36700F1F3E8 /* bank_account.h in Sources */ = {isa = PBXBuildFile; fileRef = 6D8CEAE320D7F36700F1F3E8 /* bank_account.h */; };
 		6DCD87AA20AE1B140012E48B /* help_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DCD87A920AE1B140012E48B /* help_menu.cpp */; };
 		6DDFCDA8208F1A0C00D376EF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DDFCDA7208F1A0C00D376EF /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -26,11 +27,13 @@
 
 /* Begin PBXFileReference section */
 		6D181C5B20909CB200DC5B35 /* help_file_name.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = help_file_name.h; sourceTree = "<group>"; };
-		6D63C18320B7E189007C12EF /* help_file_name_-.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "help_file_name_-.h"; sourceTree = "<group>"; };
+		6D8CEAE020D7F28900F1F3E8 /* Data.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Data.cpp; sourceTree = "<group>"; };
+		6D8CEAE120D7F28900F1F3E8 /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		6D8CEAE320D7F36700F1F3E8 /* bank_account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bank_account.h; sourceTree = "<group>"; };
 		6DCD87A920AE1B140012E48B /* help_menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = help_menu.cpp; sourceTree = "<group>"; };
 		6DDFCDA4208F1A0C00D376EF /* test_3_C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "test_3_C++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DDFCDA7208F1A0C00D376EF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		6DDFCDAE208F1A5D00D376EF /* bank_account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bank_account.h; sourceTree = "<group>"; };
+		6DDFCDAE208F1A5D00D376EF /* bank_account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bank_account.cpp; sourceTree = "<group>"; };
 		6DDFCDB0208F1B1A00D376EF /* help_menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = help_menu.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,11 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				6DDFCDA7208F1A0C00D376EF /* main.cpp */,
-				6DDFCDAE208F1A5D00D376EF /* bank_account.h */,
+				6DDFCDAE208F1A5D00D376EF /* bank_account.cpp */,
+				6D8CEAE320D7F36700F1F3E8 /* bank_account.h */,
 				6DDFCDB0208F1B1A00D376EF /* help_menu.h */,
 				6DCD87A920AE1B140012E48B /* help_menu.cpp */,
 				6D181C5B20909CB200DC5B35 /* help_file_name.h */,
-				6D63C18320B7E189007C12EF /* help_file_name_-.h */,
+				6D8CEAE020D7F28900F1F3E8 /* Data.cpp */,
+				6D8CEAE120D7F28900F1F3E8 /* Data.h */,
 			);
 			path = "test_3_C++";
 			sourceTree = "<group>";
@@ -132,7 +137,8 @@
 			files = (
 				6DDFCDA8208F1A0C00D376EF /* main.cpp in Sources */,
 				6DCD87AA20AE1B140012E48B /* help_menu.cpp in Sources */,
-				6D63C18520B7E189007C12EF /* help_file_name_-.h in Sources */,
+				6D8CEAE220D7F28900F1F3E8 /* Data.cpp in Sources */,
+				6D8CEAE420D7F36700F1F3E8 /* bank_account.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@
 #ifndef help_file_name_h
 #define help_file_name_h
 #include "help_file_name.h"
-
+#include "help_file_name.h"
 
 
 template <class Type>

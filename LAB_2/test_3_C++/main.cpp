@@ -15,6 +15,7 @@
 #include <vector>
 #include <algorithm>
 #include "help_file_name.h"
+#include "Data.h"
 //#include "help_menu.h"
 #include "bank_account.h"
 

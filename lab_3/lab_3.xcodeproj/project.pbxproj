@@ -10,6 +10,11 @@
 		6D2E66A720C5955C00AAE32B /* type_deposit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E66A520C5955C00AAE32B /* type_deposit.cpp */; };
 		6D2E66AA20C5D22D00AAE32B /* Data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E66A820C5D22D00AAE32B /* Data.cpp */; };
 		6D2E66AC20C5D51F00AAE32B /* help_file_name.h in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E66AB20C5D51F00AAE32B /* help_file_name.h */; };
+		6D8CEADC20D7DF2F00F1F3E8 /* Customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D8CEADA20D7DF2F00F1F3E8 /* Customer.cpp */; };
+		6D8CEADF20D7E0BD00F1F3E8 /* Administrator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D8CEADD20D7E0BD00F1F3E8 /* Administrator.cpp */; };
+		6DAE156120C6A806008793AC /* open_deposit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE155F20C6A806008793AC /* open_deposit.cpp */; };
+		6DAE5C6020C697BD00F16A4E /* user.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5C5E20C697BD00F16A4E /* user.cpp */; };
+		6DAE5C6320C6A3B700F16A4E /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5C6120C6A3B700F16A4E /* client.cpp */; };
 		6DBB602A20C5046500A67AA4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB602920C5046500A67AA4 /* main.cpp */; };
 		6DBB603220C504C200A67AA4 /* bank_account.h in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB603020C504C200A67AA4 /* bank_account.h */; };
 /* End PBXBuildFile section */
@@ -32,6 +37,16 @@
 		6D2E66A820C5D22D00AAE32B /* Data.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Data.cpp; sourceTree = "<group>"; };
 		6D2E66A920C5D22D00AAE32B /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		6D2E66AB20C5D51F00AAE32B /* help_file_name.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = help_file_name.h; sourceTree = "<group>"; };
+		6D8CEADA20D7DF2F00F1F3E8 /* Customer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Customer.cpp; sourceTree = "<group>"; };
+		6D8CEADB20D7DF2F00F1F3E8 /* Customer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		6D8CEADD20D7E0BD00F1F3E8 /* Administrator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Administrator.cpp; sourceTree = "<group>"; };
+		6D8CEADE20D7E0BD00F1F3E8 /* Administrator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Administrator.h; sourceTree = "<group>"; };
+		6DAE155F20C6A806008793AC /* open_deposit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = open_deposit.cpp; sourceTree = "<group>"; };
+		6DAE156020C6A806008793AC /* open_deposit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = open_deposit.h; sourceTree = "<group>"; };
+		6DAE5C5E20C697BD00F16A4E /* user.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = user.cpp; sourceTree = "<group>"; };
+		6DAE5C5F20C697BD00F16A4E /* user.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = user.h; sourceTree = "<group>"; };
+		6DAE5C6120C6A3B700F16A4E /* client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = client.cpp; sourceTree = "<group>"; };
+		6DAE5C6220C6A3B700F16A4E /* client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = client.h; sourceTree = "<group>"; };
 		6DBB602620C5046500A67AA4 /* lab_3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab_3; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DBB602920C5046500A67AA4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6DBB603020C504C200A67AA4 /* bank_account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bank_account.h; sourceTree = "<group>"; };
@@ -55,9 +70,6 @@
 			children = (
 				6DBB602820C5046500A67AA4 /* lab_3 */,
 				6DBB602720C5046500A67AA4 /* Products */,
-				6D2E66A620C5955C00AAE32B /* type_deposit.h */,
-				6D2E66A920C5D22D00AAE32B /* Data.h */,
-				6D2E66AB20C5D51F00AAE32B /* help_file_name.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,8 +88,21 @@
 				6DBB603020C504C200A67AA4 /* bank_account.h */,
 				6DBB603420C5054C00A67AA4 /* help_menu.h */,
 				6D2E66A520C5955C00AAE32B /* type_deposit.cpp */,
+				6D2E66A620C5955C00AAE32B /* type_deposit.h */,
 				6D2E66A820C5D22D00AAE32B /* Data.cpp */,
+				6D2E66A920C5D22D00AAE32B /* Data.h */,
 				6DBB603320C5051E00A67AA4 /* help_file_name.cpp */,
+				6D2E66AB20C5D51F00AAE32B /* help_file_name.h */,
+				6DAE5C5E20C697BD00F16A4E /* user.cpp */,
+				6DAE5C5F20C697BD00F16A4E /* user.h */,
+				6DAE5C6120C6A3B700F16A4E /* client.cpp */,
+				6DAE5C6220C6A3B700F16A4E /* client.h */,
+				6DAE155F20C6A806008793AC /* open_deposit.cpp */,
+				6DAE156020C6A806008793AC /* open_deposit.h */,
+				6D8CEADA20D7DF2F00F1F3E8 /* Customer.cpp */,
+				6D8CEADB20D7DF2F00F1F3E8 /* Customer.h */,
+				6D8CEADD20D7E0BD00F1F3E8 /* Administrator.cpp */,
+				6D8CEADE20D7E0BD00F1F3E8 /* Administrator.h */,
 			);
 			path = lab_3;
 			sourceTree = "<group>";
@@ -139,8 +164,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D2E66AC20C5D51F00AAE32B /* help_file_name.h in Sources */,
+				6D8CEADF20D7E0BD00F1F3E8 /* Administrator.cpp in Sources */,
 				6DBB602A20C5046500A67AA4 /* main.cpp in Sources */,
+				6DAE156120C6A806008793AC /* open_deposit.cpp in Sources */,
+				6DAE5C6020C697BD00F16A4E /* user.cpp in Sources */,
+				6DAE5C6320C6A3B700F16A4E /* client.cpp in Sources */,
 				6DBB603220C504C200A67AA4 /* bank_account.h in Sources */,
+				6D8CEADC20D7DF2F00F1F3E8 /* Customer.cpp in Sources */,
 				6D2E66A720C5955C00AAE32B /* type_deposit.cpp in Sources */,
 				6D2E66AA20C5D22D00AAE32B /* Data.cpp in Sources */,
 			);

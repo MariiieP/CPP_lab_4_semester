@@ -6,7 +6,7 @@
 //  Copyright © 2018 Мария Юрьевна. All rights reserved.
 //
 
-
+#pragma once
 #include "Data.h"
 #include <stdio.h>
 #include <math.h>

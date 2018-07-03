@@ -8,7 +8,7 @@
 
 #ifndef Data_h
 #define Data_h
-
+#pragma once
 #include <stdio.h>
 #include <string>
 #include "help_file_name.h"

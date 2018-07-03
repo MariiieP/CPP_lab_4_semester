@@ -1,0 +1,21 @@
+﻿  HelpUtils.cpp
+  Deposit.cpp
+c:\users\мария\desktop\c++\lab3no1-master\lab3no1\deposit.cpp(129): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода...
+c:\users\мария\desktop\c++\lab3no1-master\lab3no1\deposit.cpp(65): warning C4715: change_type_dep: значение возвращается не при всех путях выполнения
+  Компиляция...
+  lab3no1.cpp
+c:\users\мария\desktop\c++\lab3no1-master\lab3no1\lab3no1.cpp(150): warning C4101: num: неиспользованная локальная переменная
+c:\users\мария\desktop\c++\lab3no1-master\lab3no1\container_vector.h(170): warning C4018: >=: несоответствие типов со знаком и без знака
+  c:\users\мария\desktop\c++\lab3no1-master\lab3no1\container_vector.h(169): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\мария\desktop\c++\lab3no1-master\lab3no1\lab3no1.cpp(121): note: выполняется компиляция ссылки на экземпляр шаблон функции "bool Container_vector<Deposit>::change(bool (__cdecl *)(T &),int)"
+          with
+          [
+              T=Deposit
+          ]
+  c:\users\мария\desktop\c++\lab3no1-master\lab3no1\lab3no1.cpp(45): note: выполняется компиляция ссылки на экземпляр шаблон класс "Container_vector<Deposit>"
+c:\users\мария\desktop\c++\lab3no1-master\lab3no1\container_vector.h(158): warning C4018: >=: несоответствие типов со знаком и без знака
+  c:\users\мария\desktop\c++\lab3no1-master\lab3no1\container_vector.h(157): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\мария\desktop\c++\lab3no1-master\lab3no1\lab3no1.cpp(134): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Container_vector<Deposit>::remove_ind(int)"
+  Создание кода...
+  lab3no1.vcxproj -> C:\Users\Мария\Desktop\C++\lab3no1-master\Debug\lab3no1.exe

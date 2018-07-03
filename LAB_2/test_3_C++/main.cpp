@@ -16,7 +16,7 @@
 #include <algorithm>
 #include "help_file_name.h"
 #include "Data.h"
-//#include "help_menu.h"
+#include "help_menu.h"
 #include "bank_account.h"
 
 using namespace std;
@@ -90,7 +90,7 @@ void menu_item_binary_search(Task<bank_account> task)
             sort = elem.sorte_date_account_opening;
             break;
     }
-    subset = task.Tbinary_search(elem, sort, compare);
+    subset = task.binary_search(elem, sort, compare);
     if (subset.size() != 0)
         task.output_screen(subset, elem.output_screen_bank_account);
     else

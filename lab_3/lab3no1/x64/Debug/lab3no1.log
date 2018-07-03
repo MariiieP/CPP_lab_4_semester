@@ -1,0 +1,9 @@
+﻿  lab3no1.cpp
+c:\users\мария\desktop\c++\lab3no1-master\lab3no1\lab3no1.cpp(11): fatal error C1083: Не удается открыть файл предкомпилированный заголовок: x64\Debug\lab3no1.pch: No such file or directory,
+  HelpUtils.cpp
+c:\users\мария\desktop\c++\lab3no1-master\lab3no1\helputils.cpp(5): fatal error C1083: Не удается открыть файл предкомпилированный заголовок: x64\Debug\lab3no1.pch: No such file or directory,
+  Deposit.cpp
+c:\users\мария\desktop\c++\lab3no1-master\lab3no1\deposit.cpp(6): fatal error C1083: Не удается открыть файл предкомпилированный заголовок: x64\Debug\lab3no1.pch: No such file or directory,
+  DateUtils.cpp
+c:\users\мария\desktop\c++\lab3no1-master\lab3no1\dateutils.cpp(5): fatal error C1083: Не удается открыть файл предкомпилированный заголовок: x64\Debug\lab3no1.pch: No such file or directory,
+  Создание кода...
